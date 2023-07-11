@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <title>MyBookList</title>
+</head>
+
+<body>
+  <header>
+    <i class="uil uil-book-open"></i>
+    <h1>
+      MY <span>BOOK </span>LIST
+    </h1>
+  </header>
+  <div class="container">
+
+
+    <div class="form-container">
+      <form id="book-form">
+        <div class="form-componants">
+          <label for="title">Book Title :</label>
+          <input type="text" id="title"  autocomplete="off">
+        </div>
+        <div class="form-componants">
+          <label for="author">Author :</label>
+          <input type="text" id="author" autocomplete="off">
+        </div>
+        <div class="form-componants">
+          <label for="isbn">ISBN# :</label>
+          <input type="text" id="isbn" autocomplete="off">
+        </div>
+        <div class="form-componants">
+          <input type="submit" value="Add Book" id="add-btn">
+        </div>
+      </form>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>TITLE</th>
+          <th>AUTHOR</th>
+          <th>ISBN</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="book-list">
+        
+      </tbody>
+    </table>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
